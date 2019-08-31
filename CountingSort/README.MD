@@ -10,8 +10,6 @@ Vamos considerar os dados de entrada:
 | 0 | 6 | 1 | 4 | 1 | 0 |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 
-<!-- Add input array -->
-
 Agora, precisaremos criar um novo array chamado *contagem*, este array será usado para contar as frequências dos números, o valor do número será o index do array *contagem*, ou seja, a frequência do número zero será guardado no index zero do array. Assim é possível saber qual é o elemento, sem precisar comparar os elementos.
 
 **contagem:**
