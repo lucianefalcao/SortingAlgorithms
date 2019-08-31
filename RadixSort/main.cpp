@@ -2,26 +2,28 @@
 #include <fstream>
 #include <sstream>
 
-int main()
+int main(int argc, char** argv)
 {
-    freopen("Instancias/num.10000.4.in", "r", stdin);
-    
+    std::ifstream file (argv[1]);
+
     int n;
 
-    std::cin >> n;
+    file >> n;
 
     std::vector<int> input (n);
     std::string str;
-    getline(std::cin, str);
+    getline(file, str);
 
     for(int i = 0; i < n; i++)
     {
-        getline(std::cin, str);
+        getline(file, str);
         std::stringstream s(str);
         int numb;
         s >> numb;
         input[i] = numb;
     }
+
+    file.close();
 
     radixSort(input);
 
@@ -33,6 +35,8 @@ int main()
         ss << input[i] << '\n';
         out << ss.rdbuf();
     }
+
+    out.close();
 
     return 0;
 }
