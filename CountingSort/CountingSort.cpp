@@ -29,10 +29,3 @@ void countSort(std::vector<int>& input)
     }
 
 }
-
-void printOrderArray(std::vector<int>& sort)
-{
-    for (int i = 0; i < sort.size(); i++)
-        std::cout << sort[i] << ' ';
-    std::cout << "\n";
-}

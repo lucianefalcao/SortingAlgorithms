@@ -14,6 +14,7 @@ int main(int argc, char **argv)
 
     std::vector<int> input (n);
     std::string str;
+    getline(file, str);
 
     for (size_t i = 0; i < n; i++)
     {
@@ -23,6 +24,8 @@ int main(int argc, char **argv)
         ss >> numb;
         input[i] = numb;
     }
+
+    file.close();
 
     countSort(input);
 
@@ -34,6 +37,8 @@ int main(int argc, char **argv)
         s << input[i] << '\n';
         out << s.rdbuf();
     }
+
+    out.close();
 
     return 0;
 }
