@@ -5,7 +5,7 @@
 #include <vector>
 #include <algorithm>
 
-void countSort(std::vector<int>& _input);
+void countSort(std::vector<int>& input);
 
 
 #endif

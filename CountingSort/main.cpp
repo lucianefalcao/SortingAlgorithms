@@ -3,27 +3,26 @@
 #include <sstream>
 #include <fstream>
 
-int main()
+int main(int argc, char **argv)
 {
 
-    freopen("Instancias/counting.txt", "r", stdin);
+    std::ifstream file (argv[1]);
 
     int n;
 
-    std::cin >> n;
+    file >> n;
 
     std::vector<int> input (n);
     std::string str;
-    getline(std::cin, str);
 
     for (size_t i = 0; i < n; i++)
     {
-        getline(std::cin, str);
+        getline(file, str);
         std::stringstream ss(str);
         int numb;
         ss >> numb;
         input[i] = numb;
-    }    
+    }
 
     countSort(input);
 

@@ -1,7 +1,5 @@
 #include "CountingSort.h"
 
-
-
 void countSort(std::vector<int>& input)
 {
     int max = *std::max_element(input.begin(), input.end());
