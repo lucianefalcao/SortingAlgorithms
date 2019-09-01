@@ -5,7 +5,7 @@
 Para compilar só é preciso usar o makefile
 
 ```
-make counting
+make radix
 ```
 
 E para rodar é necessário colocar o nome do executável e depois o local que contém as instâncias para teste.
