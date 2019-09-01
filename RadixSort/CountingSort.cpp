@@ -4,6 +4,9 @@ void countingSort(std::vector<int>& input, int exp)
 {
     int min = *std::min_element(input.begin(), input.end());
 
+    if(min > 0)
+        min = -min;
+
     int size = input.size();
     std::vector<int> count (10-min);
     std::vector<int> sorted (size);
