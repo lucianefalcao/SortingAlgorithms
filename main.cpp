@@ -48,6 +48,16 @@ int main(int argc, char** argv)
         insertionSort(input);
         algorithm = "You used insertion sort\n";
     }
+    else if(!strcmp(argv[1], "merge"))
+    {
+        mergeSort(input, 0, input.size() - 1);
+        algorithm = "You used merge sort\n";
+    }
+    else if(!strcmp(argv[1], "quick"))
+    {
+        quickSort(input, 0, input.size() - 1);
+        algorithm = "You used quick sort\n";
+    }
     else
     {
         std::cout << "Sorting algorithm not available, sorry!\n";
